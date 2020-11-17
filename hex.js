@@ -35,14 +35,6 @@ btn.addEventListener("click", () => {
   hex2 = hex;
 });
 
-// const btn2 = document.getElementById("Copy");
-// btn.addEventListener("click", () => {
-//   const copyText = document.getElementById("colorInput");
-//   copyText.value = hex2;
-//   copyText.select();
-//   copyText.setSelectionRange(0, 99999);
-//   document.execCommand("copy");
-// });
 
 let colors = [];
 
@@ -77,11 +69,17 @@ function showPalate() {
       div.appendChild(h2);
       div.appendChild(btn);
       div.classList.add("color-item");
+      const img = document.createElement('IMG')
+      img.src="https://img.icons8.com/fluent-systems-filled/24/000000/copy-2.png"
+      img.classList.add('copy')
+      img.id = color;
+      div.appendChild(img)
       palateDiv.appendChild(div);
       palateDiv.classList.add("colorDisplay");
       const hexLi = document.querySelector('.hex')
       hexLi.classList.add('hide') 
     });
+    
     return palateDiv;
   }
 }
@@ -98,6 +96,15 @@ showplt.addEventListener("click", () => {
     main.innerHTML = "<h1 class='colorDisplay'>No Colors added</h1>";
   } else {
     main.innerHTML = palate.outerHTML;
+    const copyArray = document.querySelectorAll(".copy");
+    copyArray.forEach(copy=>{
+      copy.onclick = ()=>{
+      let colorHexCode = copy.id
+      navigator.clipboard.writeText(colorHexCode)
+      alert("copied")
+      }
+    }
+    )
   }
   deleteBtn = document.querySelectorAll(".delete");
   deleteBtn.forEach((butn) => {
@@ -158,10 +165,11 @@ function addItems(){
       error.classList.remove('hide')
       setTimeout(()=>{
         error.classList.add('hide')
-      },2000)
+      },1000)
     }
   }
 }
 
 const addBtn = document.getElementById("add-to-palate");
 addBtn.addEventListener("click", addItems);
+
