@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background-color: black;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Rubik', sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 15%;
+  background-color: aliceblue;
+  padding: 10px 0px;
+  box-shadow: 0px 3px 12px white;
+  z-index: 5;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.links * {
+  font-size: 20px;
+  text-decoration: none;
+  padding: 3px 10px;
+  list-style: none;
+  color: black;
+  margin: 0px 4px;
+}
+
+a:hover{
+    color:white;
+    background-color:black;
+    border-radius: 8%;
+}
+
+h2{
+  padding: 3px 10px;
+}
+
+main {
+    color: white;
+    position: absolute;
+    height: 90vh;
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    border: solid white 3px;
+    padding: 15px;
+    border-radius: 4%;
+    box-shadow: 0px 3px 12px white;
+}
+
+.container *{
+    padding: 5px;
+    margin: 5px;
+}
+
+h1{
+    padding:30px;
+}
+
+#shuffle-button{
+    padding:13px 18px !important;
+    border:solid white 2px;
+    background-color:transparent;
+    color:white;
+    border-radius: 3%;
+}
+
+#add-to-palate {
+    padding:13px 18px !important;
+    border:solid white 2px;
+    background-color:transparent;
+    color:white;
+    border-radius: 3%;
+}
+
+#shuffle-button:hover,#add-to-palate:hover{
+    background-color:white;
+    color: black;
+}
+
+#colorInput {
+    display: none;
+}
+
+#test{
+    padding: 20px 30px;
+    border-radius: 50%;
+    background-color: blue
+}
+
+.hide{
+    display: none !important;
+}
+
+.colorDisplay{   
+    color: white;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.colorDisplay *{
+  align-items: center;
+  margin: 7px;
+  display: flex;
+  justify-content: center;
+  border: solid black 5px;
+} 
+
+.color-item button {
+  padding: 5px;
+  color: white;
+}
+
+#error{
+  background-color : rgb(218, 21, 53) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: solid rgb(170, 31, 31) 3px;
+}

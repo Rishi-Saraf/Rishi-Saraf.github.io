@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>BGColor-Chooser | Hex</title>
+  </head>
+
+  <body color="">
+    <nav>
+      <div>
+        <h2>BGColor-Chooser</h2>
+      </div>
+      <div>
+        <ul class="links">
+          <li><a href="./simple.html">Simple</a></li>
+		  <li class="hex"><a href="./hex.html">Hex</a></li>
+		  <button id="show-palate">Show Palate</button>
+        </ul>
+      </div>
+    </nav>
+    <main id="main">
+      <div class="container">
+        <h1>Your Background Color is : <span id="color">#000</span></h1>
+		    <button id="shuffle-button">Click Me</button>
+        <button id="add-to-palate">Add Color</button>
+        <div id="error" class="hide">
+          You already have the color in the palate
+        </div>
+      </div>
+	</main>
+  </body>
+  <script src="./hex.js"></script>
+</html>
