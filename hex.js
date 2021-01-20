@@ -1,3 +1,4 @@
+// All the hex values
 const HexCodes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
 
 class Data {
@@ -38,6 +39,12 @@ btn.addEventListener("click", () => {
 
 let colors = [];
 
+/*
+The following function displays the palate 
+in which the colors are added by the users
+according to their will
+------------------------------------------
+*/
 function showPalate() {
   const links = document.querySelector(".links");
   const showPlt = document.querySelector("#show-palate");
@@ -84,6 +91,11 @@ function showPalate() {
   }
 }
 
+/*
+Event listener for the show palate button
+which shows the palate of the user
+-----------------------------------------
+*/
 showplt = document.getElementById("show-palate");
 showplt.addEventListener("click", () => {
   let Object = Obj
@@ -106,6 +118,11 @@ showplt.addEventListener("click", () => {
     }
     )
   }
+  
+/*
+Event listener for deleting the colors in the palate
+----------------------------------------------------
+*/
   deleteBtn = document.querySelectorAll(".delete");
   deleteBtn.forEach((butn) => {
     butn.addEventListener("click", (e) => {
@@ -122,6 +139,11 @@ showplt.addEventListener("click", () => {
       }
     });
   });
+  
+/*
+Event listener for the button used to hide the palate
+-----------------------------------------------------
+*/
   hidePlt = document.querySelector(".hide-palate");
   hidePlt.addEventListener("click", () => {
     showPlt = document.querySelector("#show-palate");
@@ -140,6 +162,11 @@ showplt.addEventListener("click", () => {
   });
 });
 
+
+/*
+Function for adding colors to the palate
+----------------------------------------
+*/
 function addItems(){
   colorExists = false;
   colors = Obj.getColors();
