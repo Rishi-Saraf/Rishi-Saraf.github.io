@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Students...</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+		body{
+			font-family: Cabin;
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.student{
+			display: flex;
+			flex-direction: column;
+			width:20vw;
+			margin: 15px auto;
+			align-items: center;
+			box-shadow: 0.1px 0.1px 10px 1px ivory;
+			padding: 12.5px;
+			border-radius: 3%;
+			background-image: linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%);;
+			transition: 0.5s;
+		}
+
+		.student:hover{
+			padding: 27px;
+		}
+
+		html {
+		    background: url(assets/wallpaper.jpg) no-repeat center center fixed;
+		    -webkit-background-size: cover;
+		    -moz-background-size: cover;
+		    -o-background-size: cover;
+		    background-size: cover;
+		}
+
+
+		.responsive-image{
+			width:10vw;
+			height: 10vw;
+			border-radius: 50%;
+		}
+
+		@media only screen and (max-width:1500px){
+			.student{
+				width:20vw;
+				height:auto;
+			}
+			.responsive-image{
+			width:12vw;
+			height: 12vw;
+			border-radius: 50%;
+			}
+		}
+
+		h1{
+			padding:3px;
+			border-radius: 6%;
+			background-color: white;
+			border: solid 1px ivory;
+		}
+
+		@media only screen and (max-width:790px){
+			.student{
+				width:32vw;
+				height:auto;
+			}
+			.responsive-image{
+			width:12vw;
+			height: 12vw;
+			border-radius: 50%;
+			}
+		}
+
+		@media only screen and (max-width:450px){
+			.student{
+				width:60vw;
+				height:auto;
+			}
+			.responsive-image{
+			width:15vh;
+			height: 15vh;
+			border-radius: 50%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="student">
+		<div class="image">
+			<img src="./assets/dummyPerson.jpg" alt="student" class="responsive-image">
+		</div>
+		<div>
+			<h1>Rishi Saraf</h1>
+		</div>
+		<div>	
+		<hr>	
+			<p>
+				I Loved Xth Standard and was really happy to be a part of GEA,
+				I now look forward to acheive my goals and make my school proud.
+				Also the Faculty has been great and supportive all the time and has helped us a lot,
+				Thank YOU !!!.
+			</p>
+		</div>
+	</div>
+		<div class="student">
+		<div class="image">
+			<img src="./assets/dummyPerson.jpg" alt="student" class="responsive-image">
+		</div>
+		<div>
+			<h1>James Bond</h1>
+		</div>
+		<div>	
+		<hr>	
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			</p>
+		</div>
+	</div>
+		<div class="student">
+		<div class="image">
+			<img src="./assets/dummyPerson.jpg" alt="student" class="responsive-image">
+		</div>
+		<div>
+			<h1>Mr. Gates</h1>
+		</div>
+		<div>	
+		<hr>	
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			</p>
+		</div>
+	</div>
+</body>
+</html>
