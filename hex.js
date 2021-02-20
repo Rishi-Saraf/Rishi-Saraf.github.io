@@ -101,7 +101,7 @@ showplt.addEventListener("click", () => {
       copy.onclick = ()=>{
       let colorHexCode = copy.id
       navigator.clipboard.writeText(colorHexCode)
-      alert("copied")
+      alert("Copied color : "+colorHexCode)
       }
     }
     )
