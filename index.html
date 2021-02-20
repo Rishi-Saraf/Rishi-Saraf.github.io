@@ -1,124 +1,135 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Students</title>
+	<title>Students...</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style type="text/css">
-		
 		@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
-
 		body{
-			height: 90vh;
-			margin: 0px;
-			padding:0px;
-			font-family: 'Cabin',sans-serif;
-			background-color: #444490;
+			font-family: Cabin;
+			display: flex;
+			flex-wrap: wrap;
+			background-color: blueviolet;
 		}
 
-		.person{
+		.student{
 			display: flex;
 			flex-direction: column;
-			width: 80%;
-			margin: 5vh auto;
-			padding: 2vh 1vw;
-			transition:1s ;
-			background-image: linear-gradient(to left,gold 50%,lavender 50%);
-			background-size: 200%;
-			border-radius: 5px;
-			background-position: 100%;
-			box-shadow: #223422 0.4vh 0.4vw 1.3vh;
+			width:20vw;
+			margin: 15px auto;
+			align-items: center;
+			box-shadow: 0.1px 0.1px 10px 1px black;
+			padding: 12.5px;
+			border-radius: 3%;
+			background-image: linear-gradient(to right,#2795C1,#6F6EC2,#7D1DF6);
+			transition: 0.5s;
 		}
 
-		.person:hover{
-			background-position: 0%;
-			width: 84%;
-			margin: 3vh auto;
-		}
-
-		.details{
-			display: flex;
-			flex-direction: row;
+		.student:hover{
+			padding: 27px;
 		}
 
 
-		.image{
-			width: 30%;
-			margin: 2rem;
+		.responsive-image{
+			width:10vw;
+			height: 10vw;
+			border-radius: 50%;
 		}
 
-		.image img{
-			border-radius: 5%;
+		@media only screen and (max-width:1500px){
+			.student{
+				width:20vw;
+				height:auto;
+			}
+			.responsive-image{
+			width:12vw;
+			height: 12vw;
+			border-radius: 50%;
+			}
 		}
 
+		h1{
+			padding:3px;
+			border-radius: 6%;
+			background-color: #5355FB;
+			border: solid 1px ivory;
+		}
+
+		@media only screen and (max-width:790px){
+			.student{
+				width:32vw;
+				height:auto;
+			}
+			.responsive-image{
+			width:12vw;
+			height: 12vw;
+			border-radius: 50%;
+			}
+		}
+
+		@media only screen and (max-width:450px){
+			.student{
+				width:60vw;
+				height:auto;
+			}
+			.responsive-image{
+			width:15vh;
+			height: 15vh;
+			border-radius: 50%;
+			}
+		}
 	</style>
 </head>
 <body>
-	<div class="person">
-		<div class="name">
+	<div class="student">
+		<div class="image">
+			<img src="./assets/dummyPerson.jpg" alt="student" class="responsive-image">
+		</div>
+		<div>
 			<h1>Rishi Saraf</h1>
-			<hr>
 		</div>
-		<div class="details">
-			<div class="image">
-				<img src="./assets/dummyPerson.jpg" alt="Image of a person">
-			</div>
-			<div>
-				<h2>Xth C</h2>
-				<hr>
-				<p>
-					I Loved Xth Standard and was really happy to be a part of GEA
-					I now look forward to acheive my goals and make my school
-					Also the Faculty has been great and supportive all the time and has helped us a lot
-					Thank YOU !!!
-				</p>
-			</div>
+		<div>	
+		<hr>	
+			<p>
+				I Loved Xth Standard and was really happy to be a part of GEA,
+				I now look forward to acheive my goals and make my school proud.
+				Also the Faculty has been great and supportive all the time and has helped us a lot,
+				Thank YOU !!!.
+			</p>
 		</div>
 	</div>
-	<div class="person">
-		<div class="name">
-			<h1>Mark Zuckerberg</h1>
-			<hr>
+		<div class="student">
+		<div class="image">
+			<img src="./assets/dummyPerson.jpg" alt="student" class="responsive-image">
 		</div>
-		<div class="details">
-			<div class="image">
-				<img src="./assets/dummyPerson.jpg" alt="Image of a person">
-			</div>
-			<div>
-				<h2>Xth Standard</h2>
-				<hr>
-				<p>
-					I dont care I just want DATA.....
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</p>
-			</div>
+		<div>
+			<h1>James Bond</h1>
+		</div>
+		<div>	
+		<hr>	
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			</p>
 		</div>
 	</div>
-	<div class="person">
-		<div class="name">
-			<h1>Batman</h1>
-			<hr>
+		<div class="student">
+		<div class="image">
+			<img src="./assets/dummyPerson.jpg" alt="student" class="responsive-image">
 		</div>
-		<div class="details">
-			<div class="image">
-				<img src="./assets/dummyPerson.jpg" alt="Image of a person">
-			</div>
-			<div>
-				<h2>Xth Standard</h2>
-				<hr>
-				<p>
-					I love leaving school because i am Batman.....
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</p>
-			</div>
+		<div>
+			<h1>Mr. Gates</h1>
+		</div>
+		<div>	
+		<hr>	
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			</p>
 		</div>
 	</div>
 </body>
